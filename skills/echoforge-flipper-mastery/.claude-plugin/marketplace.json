@@ -1,0 +1,21 @@
+{
+  "name": "echoforge-flipper-mastery-dev",
+  "description": "Development marketplace for echoforge-flipper-mastery — Flipper Zero protocol expertise for Claude Code",
+  "owner": {
+    "name": "echoforge",
+    "url": "https://github.com/elder-plinius/V3SP3R"
+  },
+  "plugins": [
+    {
+      "name": "echoforge-flipper-mastery",
+      "description": "Flipper Zero protocol expertise: DuckyScript, Sub-GHz, IR, NFC/RFID, hardware-debug, payload analysis.",
+      "version": "0.1.0",
+      "source": "./",
+      "author": {
+        "name": "echoforge",
+        "url": "https://github.com/elder-plinius/V3SP3R"
+      },
+      "license": "MIT"
+    }
+  ]
+}

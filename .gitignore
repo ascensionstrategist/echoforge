@@ -1,0 +1,62 @@
+# Python build / cache artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+build/
+dist/
+*.spec
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# echoforge local state (lives in user's home, but guard against accidental project-relative writes)
+.echoforge/
+echoforge.db
+*.audit.db
+
+# Logs
+*.log
+
+# Local payload library mirror — managed by scripts/sync_payload_library.py outside the repo
+echoforge-payloads/
+
+# Generated protobuf files (regenerated via scripts/build_protos.py)
+src/echoforge/proto/*_pb2.py
+src/echoforge/proto/*_pb2.pyi
+!src/echoforge/proto/__init__.py
+
+# Engagement keys / secrets — must never enter version control
+keys/
+*.key
+*.pem
+.env
+.env.*
+!.env.example
+
+# Operator-mode audit DBs — may contain sensitive payload bytes
+audit-*.db
+operator-audit-*.db
+
+# Tooling caches
+.coverage
+htmlcov/
+.tox/
+
+# Claude local config
+.claude/

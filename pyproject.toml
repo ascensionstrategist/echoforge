@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "echoforge"
+version = "0.1.0"
+description = "3CH0F0RG3 — AI-driven red-team framework for Flipper Zero hardware (physical-layer pentest engagements via Claude)"
+requires-python = ">=3.10"
+license = { text = "GPL-3.0-or-later" }
+authors = [{ name = "Shawn Daniel" }]
+dependencies = [
+    "pyserial>=3.5",
+    "protobuf>=5.27",
+    "claude-agent-sdk>=0.1.0",
+    "textual>=0.80",
+    "rich>=13.7",
+    "pydantic>=2.8",
+    "anyio>=4.4",
+]
+
+[project.optional-dependencies]
+dev = [
+    "grpcio-tools>=1.65",
+    "pytest>=8.0",
+    "pytest-asyncio>=0.23",
+    "ruff>=0.6",
+    "pyinstaller>=6.10",
+]
+
+[project.scripts]
+echoforge = "echoforge.cli:main"
+ef = "echoforge.cli:main"
+echoforge-ping = "echoforge.tools.ping:main"
+echoforge-ducky-lint = "echoforge.payload.lint_cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"

@@ -1,0 +1,29 @@
+{
+  "name": "echoforge-flipper-mastery",
+  "version": "0.1.0",
+  "description": "Flipper Zero protocol expertise: DuckyScript, Sub-GHz, IR, NFC/RFID, hardware-debug, payload analysis.",
+  "author": {
+    "name": "echoforge",
+    "url": "https://github.com/elder-plinius/V3SP3R"
+  },
+  "license": "MIT",
+  "keywords": [
+    "flipper-zero",
+    "duckyscript",
+    "sub-ghz",
+    "infrared",
+    "nfc",
+    "rfid",
+    "hardware-security",
+    "red-team",
+    "pentesting"
+  ],
+  "skills": [
+    "skills/echoforge-duckyscript",
+    "skills/echoforge-subghz",
+    "skills/echoforge-ir",
+    "skills/echoforge-nfc-rfid",
+    "skills/echoforge-hardware-debug",
+    "skills/echoforge-payload-defender"
+  ]
+}
