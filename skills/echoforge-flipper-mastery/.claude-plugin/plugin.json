@@ -4,8 +4,10 @@
   "description": "Flipper Zero protocol expertise: DuckyScript, Sub-GHz, IR, NFC/RFID, hardware-debug, payload analysis.",
   "author": {
     "name": "echoforge",
-    "url": "https://github.com/elder-plinius/V3SP3R"
+    "url": "https://github.com/ascensionstrategist/echoforge"
   },
+  "homepage": "https://github.com/ascensionstrategist/echoforge",
+  "repository": "https://github.com/ascensionstrategist/echoforge",
   "license": "MIT",
   "keywords": [
     "flipper-zero",
